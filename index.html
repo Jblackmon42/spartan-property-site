@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spartan Property Management</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="min-h-screen bg-white text-gray-900">
+  <header class="bg-black text-white p-6 shadow-md">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      <div class="flex items-center gap-4">
+        <img src="public/logo.png" alt="Spartan Logo" width="50" height="50">
+        <h1 class="text-2xl font-bold">Spartan Property Management</h1>
+      </div>
+      <div class="text-sm">
+        <p>Email: info@txspartan.com</p>
+        <p>Repairs: repairs@txspartan.com</p>
+        <p>Call: 817-201-7304</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-7xl mx-auto p-6">
+    <section class="mb-12">
+      <h2 class="text-xl font-semibold mb-2">About Us</h2>
+      <p>
+        Spartan Property Management is a locally owned business based in Texas,
+        providing full-service property management, maintenance, and rent
+        collection solutions. Our goal is to offer reliable and affordable
+        services for property owners and tenants.
+      </p>
+    </section>
+
+    <section class="mb-12">
+      <h2 class="text-xl font-semibold mb-2">Our Services</h2>
+      <ul class="list-disc pl-6">
+        <li>Property Management</li>
+        <li>Rental Marketing & Tenant Placement</li>
+        <li>Maintenance & Repair Services</li>
+        <li>Rent Collection & Accounting</li>
+        <li>Tenant Support & Communication</li>
+      </ul>
+    </section>
+
+    <section class="mb-12">
+      <h2 class="text-xl font-semibold mb-2">Contact Us</h2>
+      <p class="mb-2">Have questions or need help with a property? Reach out today.</p>
+      <ul class="pl-6">
+        <li>Email: <a href="mailto:info@txspartan.com" class="text-blue-600">info@txspartan.com</a></li>
+        <li>Repair Requests: <a href="mailto:repairs@txspartan.com" class="text-blue-600">repairs@txspartan.com</a></li>
+        <li>Phone: 817-201-7304</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="bg-black text-white text-center p-4">
+    <p>&copy; <span id="year"></span> Spartan Property Management. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
